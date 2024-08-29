@@ -1,0 +1,112 @@
+.link
+{
+    text-decoration: none;
+}
+
+/* content banner */
+.banner
+{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner_img
+{
+    padding-top:120px;
+    padding-bottom: 50px; 
+}
+
+/* content heroes */
+.heroes
+{
+    background-color: #082D46;
+    padding: 20px; 
+}
+
+#heroes_banner_h1
+{
+    color:#FFA654;
+}
+
+/* character cards */
+.char_card
+{
+    background-color: #FFF2E3;
+    width: 250px; 
+    border: 5px solid #FFA654;
+    margin: 20px;
+    height:400px;
+    transition:transform .2s;
+    /* height: 400px; */
+}
+
+.char_card:hover
+{
+    transform:scale(1.05); 
+    cursor:pointer;
+}
+
+.char_cards
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* padding: 20px;  */
+}
+
+.char_card_header
+{
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.char_card_name
+{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 700; 
+    font-size: 25px;
+    color: #082D46;
+    background-color: #FFA654; 
+    border: 5px solid #082D46;
+    padding: 10px;
+}
+
+.char_card_img
+{
+    display: flex; 
+    height: 270px;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.char_card_srcimg
+{
+    width: 150px;
+}
+
+/* content enemies */
+.enemies
+{
+    background-color: #FFF2E3;
+    padding: 20px;
+}
+
+#enemies_banner_h1
+{
+    color:#082D46; 
+}
+
+.orange
+{
+    color:#FFA654;
+    background-color: #082D46;
+    border: 5px solid #FFA654;
+}
+
+.navy
+{
+    border: 5px solid #082D46;
+}

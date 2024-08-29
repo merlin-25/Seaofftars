@@ -1,0 +1,189 @@
+/* content banner */
+.banner
+{
+    display:flex;
+    justify-content: center;
+}
+
+.banner_img
+{
+    padding-top:120px;
+    padding-bottom: 50px; 
+}
+
+/* content heroes */
+.heroes
+{
+    background-color: #082D46;
+    padding: 20px; 
+    padding-top: 120px;
+}
+
+#heroes_banner_h1
+{
+    color:#FFA654;
+}
+
+/* character cards */
+.char_card
+{
+    background-color: #FFF2E3;
+    width: 250px; 
+    border: 5px solid #FFA654;
+    /* height: 400px; */
+}
+
+/* .char_detail_cards
+{
+    margin: 50px; 
+} */
+
+.char_detail_card
+{ 
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px; 
+}
+
+.char_detail_card_desc
+{
+    margin: 30px; 
+    width: 70%;  
+    background-color: #FFF2E3;
+    border: 5px solid #FFA654;
+}
+
+.char_detail_card_desc_head
+{
+    margin:30px; 
+}
+
+.char_detail_card_desc_head > h1
+{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#082D46;
+}
+
+.char_detail_card_desc_head > h1 > span
+{
+    font-size: 15px; 
+}
+
+.char_detail_card_desc_content > p
+{
+    font-size: 20px; 
+    font-family: arial;
+    color: #082D46;
+    margin: 30px; 
+}
+
+.char_card_header
+{
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.char_card_name
+{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 700; 
+    font-size: 25px;
+    color: #082D46;
+    background-color: #FFA654; 
+    border: 5px solid #082D46;
+    padding: 10px;
+}
+
+.char_card_img
+{
+    display: flex; 
+    height: 270px;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.char_card_srcimg
+{
+    width: 150px;
+}
+
+.src_img_gif_hero
+{
+    width:250px;
+}
+
+.src_img_gif_enem
+{
+    width:150px;
+}
+
+.slide1, .slide2, .slide3
+{
+    display:none;
+}
+
+/* character card navy */
+.navy > .char_card
+{
+    border: 5px solid #082D46;
+}
+
+.navy > .char_card .char_card_name
+{
+    background-color: #082D46;
+    color:#FFA654;
+    border: 5px solid #FFA654;
+}
+
+.navy > .char_detail_card_desc
+{
+    border: 5px solid #082D46;
+    background-color: #FFF2E3;
+}
+
+/* content enemies */
+.enemies
+{
+    background-color: #FFF2E3;
+    padding: 20px;
+}
+
+#enemies_banner_h1
+{
+    color:#082D46; 
+}
+
+/* character detail image slide  */
+.char_card
+{
+    width:250px;
+    position: relative;
+}
+.prev, .next
+{
+    cursor: pointer; 
+    position: absolute;
+    width:30px;  
+    color:#082D46;
+    font-weight: 900;
+    padding:10px;
+}
+
+.next
+{
+    right:0; 
+}
+
+.prev
+{
+    left:0; 
+}
+
+#valer_card, #zael_card, #galr_card, #pawn_card, #bishop_card, #fleshmancer_card
+{
+    scroll-margin-top: 100px;
+}

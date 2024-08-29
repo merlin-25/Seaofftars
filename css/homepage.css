@@ -1,0 +1,300 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+#top_bar
+{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+/* header */
+#header_h1
+{
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 30px; 
+    color:white; 
+    padding: 10px;
+    text-shadow: 4px 4px 10px #52BAFF;
+}
+
+header
+{
+    background-color: #082D46; 
+    height: 50px; 
+}
+
+/* navigation  */
+
+#active
+{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #FFA654;
+}
+
+#account-li
+{
+    float: right;
+}
+
+/* #account
+{
+    color: #00F0FF;
+} */
+
+#nav_ul
+{
+    list-style-type: None;
+    margin: 0; 
+    padding: 0; 
+}
+
+nav.desktop
+{
+    position: absolute;
+    width:100%;
+    background-color:#082D46;
+    box-shadow: 3px 3px 10px black;
+    z-index: 2;
+}
+
+.desk_nav
+{
+    float:left;
+    background-color: #082D46;
+}
+
+.page
+{
+    display:block; 
+    color: white; 
+    text-align: center; 
+    margin: 10px 30px 10px 30px; 
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.page:hover
+{
+    color: #FFA654;
+    cursor: pointer; 
+}
+
+/* content */
+.content_h1
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    /* text-shadow: 1px 1px 3px #082D46; */
+    font-size: 30px; 
+    font-weight:900;
+    /* padding-bottom:20px; */
+    /* background-color:#FFA654; */
+    color: #082D46;
+    /* border: 3px solid #FFA654; */
+}
+/* banner */
+.banner
+{
+    overflow: hidden;
+    height:700px;
+    position: relative;
+}
+
+/* banner image */
+#banner_img
+{
+    display: flex; 
+    justify-content: center;
+}
+
+/* banner header */
+#banner_header
+{
+    position: absolute;
+    width: 350px;
+    top: 40%;
+    left: 5%;
+}
+
+.banner_h1
+{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 60px; 
+    color:white; 
+    text-shadow: 4px 4px 10px #082D46;
+}
+
+.banner_p
+{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px; 
+    color:white; 
+    text-shadow: 4px 4px 10px #082D46;
+}
+
+/* banner playButton */
+#banner_playButton
+{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%); 
+}
+#banner_button
+{
+    padding: 15px 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px; 
+    font-weight:900;
+    background-color: #FFA654;
+    color: #082D46; 
+    border: 3px solid #082D46;
+}
+
+#banner_button:hover
+{
+    cursor: pointer;
+    background-color: #082D46;
+    color: #FFA654; 
+    border: 3px solid #FFA654;
+}
+
+/* trailer */
+.trailer
+{
+    /* background-color: white; */
+    padding:20px;
+    background-color: #FFF2E3;
+}
+
+.trailer_content
+{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+
+#trailer_video
+{
+    width: 875px;
+    height:500px;
+    border-radius: 50px;
+    border: 10px solid #082D46;
+}
+
+#trailer_iframe
+{
+    width: 875px;
+    height:500px;
+    border-radius: 50px;
+    border: 10px solid #082D46;
+}
+
+/* features */
+.features
+{
+    background-color: #082D46;
+    padding:20px;
+}
+#features_h1
+{
+    color:#FFA654;
+}
+
+.feature_card
+{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card_image
+{
+    border: 5px solid #FFA654;
+    /* overflow: hidden; */
+    width:500px;
+    height:300px;
+    position:relative;
+    display: flex;
+}
+
+.card_img 
+{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_text
+{
+    width:500px;
+    padding:20px;
+    background-color: #FFF2E3;
+    border: 5px solid #FFA654;
+}
+
+.card_h2
+{
+    text-align: center;
+    padding:10px;
+    background-color: #FFA654;
+    color:#082D46;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    /* border: 5px #082D46; */
+}
+
+.card_p
+{
+    padding:20px;
+    font-family: arial;
+    font-size:15px;
+}
+
+/* image slider */
+.prev, .next
+{
+    cursor: pointer; 
+    width:30px;  
+    padding: 20px;
+    color:#FFA654;
+    font-weight: 900;
+    /* z-index: 9999; */
+    position:absolute;
+    top:40%;
+}
+
+.prev:hover, .next:hover
+{
+    color:white;
+    background-color: #FFA654;
+}
+
+.next
+{
+    right:0; 
+}
+
+.prev
+{
+    left:0; 
+}
+
+.index_card
+{
+    color:white; 
+    font-size: 15px;
+    padding:10px;
+    position:absolute;
+    right:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFA654;
+}

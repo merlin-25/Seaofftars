@@ -1,0 +1,108 @@
+.content_form
+{
+    display:flex;
+    justify-content: center;
+    background-color: #082D46;
+    height: 100%;
+    width:100%;
+}
+
+.register_box
+{
+    margin: 150px 50px 50px 50px; 
+    background-color: #FFF2E3;
+    width: 500px; 
+    /* height:15px; */
+    /* height: 450px; */
+    display:flex; 
+    justify-content: center;
+}
+
+.form_input
+{
+    /* margin:30px; */
+    width:400px;
+    margin: 40px; 
+}
+
+#country
+{
+    width:100%;
+}
+
+.form_content
+{
+    margin:10px;
+    width: 100%; 
+    padding: 10px; 
+    height:40px;
+    color:#929292;
+    /* margin-bottom: 30px; */
+    border: 2px solid #082D46;
+}
+
+.check_box
+{
+    margin:10px; 
+    color:#082D46;
+    border: 5=px solid #082D46;
+    width:15px;
+    height:15px;
+    /* height:15px; */
+}
+
+
+#cb_message
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#082D46;
+    color:#929292;
+}
+
+.alert_msg
+{
+    padding:10px;
+    padding-top:0px;
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#alert_uname, #alert_email, #alert_pass, #alert_checked, #alert_country, #success_message
+{
+    display:none;
+}
+
+#success_message
+{
+    margin:10px;
+}
+
+/* .check_box > span
+{
+    margin
+} */
+
+.register
+{
+    width:200px;
+    height:40px;
+    text-align: center;
+    padding: 10px; 
+    cursor: pointer; 
+    display: block; 
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: 3px solid #082D46;
+    background-color: #FFF2E3;
+    color: #082D46;
+    font-weight: 700;
+}
+
+.register:hover
+{
+    color: #FFF2E3; 
+    background-color: #082D46;
+}

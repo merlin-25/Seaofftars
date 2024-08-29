@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <script defer src="../js/home_page.js"></script>
+    <script defer src="../js/mobile_nav.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div id="top_bar">
+    <header>
+        <h1 id="header_h1">SEA OF FTARS</h1>
+    </header>
+    <navigation>
+         <nav class="mobile">
+            <div class="mobile_nav_container">
+            <a class="icon" onclick="openMobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+              <div id="mobile_links">
+                <a class="active mobile_nav">home</a>
+                <a href="../html/character.html" class="mobile_nav">character</a>
+                <a href="../html/character_detail.html" class="mobile_nav">character detail</a>
+                <a href="../html/fan_art.html" class="mobile_nav">fan art</a>
+                <a href="../html/account.html" class="mobile_nav">account</a>
+              </div>
+            </div>
+        </nav>
+        <nav class="desktop">
+             <ul id="nav_ul">
+                <li class="desk_nav"><a id="active" class="page">home</a></li>
+                <li class="desk_nav"><a href="character.html" class="page">characters</a></li>
+                <li class="desk_nav"><a href="character_detail.html" class="page">character detail</a></li>
+                <li class="desk_nav"><a href="fan_art.html" class="page">fan art</a></li>
+                <li id="account-li" class="desk_nav acc_nav"><a href="account.html" id="account" class="page">Account</a></li>
+            </ul>
+        </nav>
+    </navigation>
+    </div>
+
+    <content>
+        <!-- place where users can play game -->
+        <div class="banner">
+            <div id="banner_img">
+                <img src="../resource/homepage.jpg" id="banner_image">
+            </div>
+            <div id="banner_header">
+                <h1 class="banner_h1">DEFEAT THE EVIL ALCHEMIST</h1>
+                <p class="banner_p">Sea of Ftars is available now.</p>
+            </div>
+            <div id="banner_playButton">
+                <button id="banner_button">PLAY NOW</button>
+            </div>
+        </div>
+
+        <!-- trailer -->
+        <div class="trailer">
+            <div class="trailer_header">
+                <h1 class="content_h1">TRAILER</h1>
+            </div>
+            <div class="trailer_content">
+                <iframe id="trailer_iframe" src="https://www.youtube.com/embed/BMComOd9qP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <video id="trailer_video" controls>
+                    <source src="../resource/seaOfStarsTrailer.mp4" type="video/mp4">
+                </video> -->
+            </div>
+        </div>
+
+        <!-- features -->
+        <div class="features">
+            <div class="features_header">
+                <h1 class="content_h1" id="features_h1">FEATURES</h1>
+            </div>
+            <div class="feature_cards_parent">
+                <div class="feature_card">
+                    <div class="card_image">
+                        <div class="slide1">
+                            <img class="card_img" src="../resource/feature1.png">
+                        </div>
+                        <div class="slide1">
+                            <img class="card_img" src="../resource/feature12.png">
+                        </div>
+                        <div class="slide1">
+                            <img class="card_img" src="../resource/feature13.png">
+                        </div>
+                        <div class="slide1">
+                            <img class="card_img" src="../resource/feature14.png">
+                        </div>
+                        <div class="slide1">
+                            <img class="card_img" src="../resource/feature15.png">
+                        </div>
+                        <a id="slide1_prev" class="prev" onclick="addSlides(-1, 0)">&#10094;</a>
+                        <a id="slide1_next" class="next" onclick="addSlides(1, 0)">&#10095;</a>
+                        <p class="index_card"><span id="slide1_p"></span>/5</p>
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_header">
+                            <h2 class="card_h2">A Wonderful World</h2>
+                        </div>
+                        <div class="card-text-info">
+                            <p class="card_p">
+                                There are a lot of things you can do in the world of Sea of Stars. Sailing, fishing, cooking, and listening to songs are some of them. Everything you can do in this world are presented wonderfully with soothing color palette and out of this world animation. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_card">
+                    <div class="card_image">
+                        <div class="slide2">
+                            <img class="card_img" src="../resource/feature2.png">
+                        </div>
+                        <div class="slide2">
+                            <img class="card_img" src="../resource/feature22.png">
+                        </div>
+                        <div class="slide2">
+                            <img class="card_img" src="../resource/feature23.png">
+                        </div>
+                        <div class="slide2">
+                            <img class="card_img" src="../resource/feature24.png">
+                        </div>
+                        <div class="slide2">
+                            <img class="card_img" src="../resource/feature25.png">
+                        </div>
+                        <a id="slide2_prev" class="prev" onclick="addSlides(-1, 1)">&#10094;</a>
+                        <a id="slide2_next" class="next" onclick="addSlides(1, 1)">&#10095;</a>
+                        <p class="index_card"><span id="slide2_p"></span>/5</p>
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_header">
+                            <h2 class="card_h2">Engaging Adventure</h2>
+                        </div>
+                        <div class="card-text-info">
+                            <p class="card_p">
+                                There are a lot of things that users can do in the world of Sea of Stars. Players can run, swim, climb, jump, and other things in the game. Players can also enjoy the well-crafted adventure in the game and spend countless hours in exploring the well-made world. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_card">
+                    <div class="card_image">
+                        <div class="slide3">
+                            <img class="card_img" src="../resource/feature3.png">
+                        </div>
+                        <div class="slide3">
+                            <img class="card_img" src="../resource/feature32.png">
+                        </div>
+                        <div class="slide3">
+                            <img class="card_img" src="../resource/feature33.png">
+                        </div>
+                        <div class="slide3">
+                            <img class="card_img" src="../resource/feature34.png">
+                        </div>
+                        <div class="slide3">
+                            <img class="card_img" src="../resource/feature35.png">
+                        </div>
+                        <a id="slide3_prev" class="prev" onclick="addSlides(-1, 2)">&#10094;</a>
+                        <a id="slide3_next" class="next" onclick="addSlides(1, 2)">&#10095;</a>
+                        <p class="index_card"><span id="slide3_p"></span>/5</p>
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_header">
+                            <h2 class="card_h2">Well-Crafted Storyline</h2>
+                        </div>
+                        <div class="card-text-info">
+                            <p class="card_p">
+                                The game of Sea of Star presents a lot of interesting storyline players can explore. A lot of engaging and challenging characters are present in this game. Dozens of captivating story-arc are also present in this game. Players can also choose their own playable characters and explore all their storylines.                                 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_card">
+                    <div class="card_image">
+                        <div class="slide4">
+                            <img class="card_img" src="../resource/feature4.png">
+                        </div>
+                        <div class="slide4">
+                            <img class="card_img" src="../resource/feature42.png">
+                        </div>
+                        <div class="slide4">
+                            <img class="card_img" src="../resource/feature43.png">
+                        </div>
+                        <div class="slide4">
+                            <img class="card_img" src="../resource/feature44.png">
+                        </div>
+                        <div class="slide4">
+                            <img class="card_img" src="../resource/feature45.png">
+                        </div>
+                        <a id="slide4_prev" class="prev" onclick="addSlides(-1, 3)">&#10094;</a>
+                        <a id="slide4_next" class="next" onclick="addSlides(1, 3)">&#10095;</a>
+                        <p class="index_card"><span id="slide4_p"></span>/5</p>
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_header">
+                            <h2 class="card_h2">Exceptional Combat Mechanism</h2>
+                        </div>
+                        <div class="card-text-info">
+                            <p class="card_p">
+                                The game of Sea of Stars features a lot of exceptional combat mechanism. Combat mechanisms were tested and evaluated to make sure it’s unique and engaging. 
+                            </p>
+                            <p class="card_p">
+                                Each characters also have their own unique strengths and each strength are unique and engaging. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+
+    <footer>
+        <div class="footer_header">
+            <p class="footer_header_p">FOLLOW US</p>
+        </div>
+        <div class="footer_content">
+            <div class="footer_icons">
+                <a href="https://id-id.facebook.com/"><i class="fa fa_footer fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+            <div class="footer_icons">
+                <a href="https://www.youtube.com/"><i class="fa fa_footer fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+            <div class="footer_icons">
+                <a href="https://www.instagram.com/"><i class="fa fa_footer fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="footer_icons">
+                <a href="https://twitter.com/"><i class="fa fa_footer fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
